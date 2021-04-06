@@ -34,6 +34,10 @@
       href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Merriweather&family=Montserrat&family=Special+Elite&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -41,35 +45,59 @@
     <button id="myBtn" title="Go to top">
       <i class="fas fa-arrow-up"></i>
     </button>
-    <header class="masthead bg-primary text-white text-center">
-      <!-- <nav class="navbar">
-        <a class="navbar-brand" href="#">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
           <img
-            src="img/beneath the acne scars.png"
-            alt="Logo"
-            class="header__logo"
-            width="40%"
+            src="img/ajbg.png"
+            alt="Los Angeles"
+            width="1100"
+            height="500"
+            id="fade1"
           />
-        </a>
-      </nav> -->
-      <div class="header__logo-box"></div>
-      <div class="container d-flex align-items-center flex-column">
-        <!-- Masthead Heading-->
-        <h1 class="masthead-heading text-uppercase mb-0">
-          Beneath The Acne Scars
-        </h1>
-        <!-- Icon Divider-->
-        <div class="divider-custom divider-light">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon"><i class="fas fa-heart"></i></div>
-          <div class="divider-custom-line"></div>
+          <div class="carousel-caption"></div>
         </div>
-        <!-- Masthead Subheading-->
-        <p class="masthead-subheading font-weight-light mb-0">
-          Neutralizing Acne Through Poetry - By: Avilasha Joshi
-        </p>
+        <div class="carousel-item">
+          <img src="img/title01.png" alt="Chicago" width="1100" height="500" />
+          <div class="carousel-caption">
+            <h1 class="titleText">Skin Care</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/title02.png" alt="New York" width="1100" height="500" />
+          <div class="carousel-caption">
+            <h1 class="titleText">Adult Acne</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/title03.png" alt="Chicago" width="1100" height="500" />
+          <div class="carousel-caption">
+            <h1 class="titleText">A Perfect Composition</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/title04.jpg" alt="New York" width="1100" height="500" />
+          <div class="carousel-caption">
+            <h1 class="titleText">Untold Narratives: My Acne Scars</h1>
+          </div>
+        </div>
       </div>
-    </header>
+
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
     <main class="">
       <section class="page-section poems" id="poems">
         <div class="container">
