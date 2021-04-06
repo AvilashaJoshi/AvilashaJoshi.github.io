@@ -88,7 +88,7 @@ header {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(242, 179, 255, 0.8);
+  background-color: rgba(251, 249, 252, 0.664);
 }
 .poems .poems-item .poems-item-caption:hover {
   opacity: 1;
@@ -204,7 +204,7 @@ header {
   color: #fff !important;
 }
 .btn-info {
-  background: #8abad3ff;
+  background: rgb(61, 160, 102);
 }
 .btn {
   border-radius: 4rem;
