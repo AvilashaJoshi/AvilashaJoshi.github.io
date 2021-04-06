@@ -27,6 +27,19 @@ h1.titleText {
   font-size: 3rem;
   font-family: "Cedarville Cursive", cursive;
 }
+@media screen and (max-width: 1200px) {
+  h1.titleText {
+    font-size: 2rem;
+    font-family: "Cedarville Cursive", cursive;
+  }
+}
+@media screen and (max-width: 1000px) {
+  h1.titleText {
+    font-size: 1rem;
+    font-family: "Cedarville Cursive", cursive;
+    display: none;
+  }
+}
 
 header {
   display: block;
