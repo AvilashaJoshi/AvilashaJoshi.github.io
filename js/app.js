@@ -1,3 +1,13 @@
+var revealElements = document.getElementsByClassName("picture");
+//Controller
+var controller = new ScrollMagic.Controller();
+//Get the button
+var mybutton = document.getElementById("myBtn");
+//Nav
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -7,10 +17,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
-
-var revealElements = document.getElementsByClassName("picture");
-
-var controller = new ScrollMagic.Controller();
 
 for (var i = 0; i < revealElements.length; i++) {
   // create a scene for each element
@@ -29,9 +35,6 @@ var scene = new ScrollMagic.Scene({
 })
   .setClassToggle(".picture", "show")
   .addTo(controller);
-
-//Get the button
-var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -58,4 +61,14 @@ $("#myBtn").click(function () {
     },
     "slow"
   );
+});
+
+// Nav Hamburger open
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+
+  links.forEach((link) => {
+    link.classList.toggle("fade");
+  });
+  // alert("CLick");
 });
