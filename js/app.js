@@ -64,11 +64,33 @@ $("#myBtn").click(function () {
 });
 
 // Nav Hamburger open
-hamburger.addEventListener("click", () => {
+// hamburger.addEventListener("click", () => {
+//   navLinks.classList.toggle("open");
+
+//   links.forEach((link) => {
+//     link.classList.toggle("fade");
+//   });
+//   // alert("CLick");
+// });
+
+function navToggle(e) {
+  if (!e.target.classList.contains("active")) {
+    e.target.classList.add("active");
+    gsap.to(".line1", 0.4, { rotate: "45", y: 5, background: "black" });
+    gsap.to(".line2", 0.4, { rotate: "-45", y: -5, background: "black" });
+
+    gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
+    document.body.classList.add("hide");
+  } else {
+    e.target.classList.remove("active");
+    gsap.to(".line1", 0.4, { rotate: "0", y: 0, background: "black" });
+    gsap.to(".line2", 0.4, { rotate: "0", y: 0, background: "black" });
+    document.body.classList.remove("hide");
+  }
   navLinks.classList.toggle("open");
 
   links.forEach((link) => {
     link.classList.toggle("fade");
   });
-  // alert("CLick");
-});
+}
+hamburger.addEventListener("click", navToggle);
