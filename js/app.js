@@ -7,6 +7,7 @@ var mybutton = document.getElementById("myBtn");
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
+const burger = document.querySelector(".burger");
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -73,24 +74,43 @@ $("#myBtn").click(function () {
 //   // alert("CLick");
 // });
 
+// function navToggle(e) {
+//   if (!e.target.classList.contains("active")) {
+//     e.target.classList.add("active");
+//     gsap.to(".line1", 0.4, { rotate: "45", y: 5, background: "black" });
+//     gsap.to(".line2", 0.4, { rotate: "-45", y: -5, background: "black" });
+
+//     gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
+//     document.body.classList.add("hide");
+//   } else {
+//     e.target.classList.remove("active");
+//     gsap.to(".line1", 0.4, { rotate: "0", y: 0, background: "black" });
+//     gsap.to(".line2", 0.4, { rotate: "0", y: 0, background: "black" });
+//     document.body.classList.remove("hide");
+//   }
+//   navLinks.classList.toggle("open");
+
+//   links.forEach((link) => {
+//     link.classList.toggle("fade");
+//   });
+// }
 function navToggle(e) {
   if (!e.target.classList.contains("active")) {
     e.target.classList.add("active");
-    gsap.to(".line1", 0.4, { rotate: "45", y: 5, background: "black" });
-    gsap.to(".line2", 0.4, { rotate: "-45", y: -5, background: "black" });
-
+    gsap.to(".line1", 0.5, { rotate: "45", y: 5, background: "black" });
+    gsap.to(".line2", 0.5, { rotate: "-45", y: -5, background: "black" });
+    gsap.to("#logo", 1, { color: "black" });
     gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
     document.body.classList.add("hide");
   } else {
     e.target.classList.remove("active");
-    gsap.to(".line1", 0.4, { rotate: "0", y: 0, background: "black" });
-    gsap.to(".line2", 0.4, { rotate: "0", y: 0, background: "black" });
+    gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "black" });
+    gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "black" });
+    gsap.to("#logo", 1, { color: "white" });
+    gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
     document.body.classList.remove("hide");
   }
-  navLinks.classList.toggle("open");
-
-  links.forEach((link) => {
-    link.classList.toggle("fade");
-  });
 }
-hamburger.addEventListener("click", navToggle);
+// hamburger.addEventListener("click", navToggle);
+
+burger.addEventListener("click", navToggle);
