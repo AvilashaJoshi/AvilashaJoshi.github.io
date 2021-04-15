@@ -1,3 +1,6 @@
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
 var revealElements = document.getElementsByClassName("picture");
 //Controller
 var controller = new ScrollMagic.Controller();
@@ -136,61 +139,61 @@ burger.addEventListener("click", navToggle);
       cover: "../img/poems_UntoldNarratives.png",
     },
 
-    {
-      id: 3,
-      url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_03_-_Three.mp3",
-      author: "Marcel Pequel",
-      title: "Three",
-      cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    },
+    // {
+    //   id: 3,
+    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_03_-_Three.mp3",
+    //   author: "Marcel Pequel",
+    //   title: "Three",
+    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
+    // },
 
-    {
-      id: 4,
-      url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_04_-_Four.mp3",
-      author: "Marcel Pequel",
-      title: "Four",
-      cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    },
+    // {
+    //   id: 4,
+    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_04_-_Four.mp3",
+    //   author: "Marcel Pequel",
+    //   title: "Four",
+    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
+    // },
 
-    {
-      id: 5,
-      url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_05_-_Five.mp3",
-      author: "Marcel Pequel",
-      title: "Five",
-      cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    },
+    // {
+    //   id: 5,
+    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_05_-_Five.mp3",
+    //   author: "Marcel Pequel",
+    //   title: "Five",
+    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
+    // },
 
-    {
-      id: 6,
-      url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_06_-_Six.mp3",
-      author: "Marcel Pequel",
-      title: "Six",
-      cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    },
+    // {
+    //   id: 6,
+    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_06_-_Six.mp3",
+    //   author: "Marcel Pequel",
+    //   title: "Six",
+    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
+    // },
 
-    {
-      id: 7,
-      url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_07_-_Seven.mp3",
-      author: "Marcel Pequel",
-      title: "Seven",
-      cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    },
+    // {
+    //   id: 7,
+    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_07_-_Seven.mp3",
+    //   author: "Marcel Pequel",
+    //   title: "Seven",
+    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
+    // },
 
-    {
-      id: 8,
-      url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_08_-_Eight.mp3",
-      author: "Marcel Pequel",
-      title: "Eight",
-      cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    },
+    // {
+    //   id: 8,
+    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_08_-_Eight.mp3",
+    //   author: "Marcel Pequel",
+    //   title: "Eight",
+    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
+    // },
 
-    {
-      id: 9,
-      url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_09_-_Nine.mp3",
-      author: "Marcel Pequel",
-      title: "Nine",
-      cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    },
+    // {
+    //   id: 9,
+    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_09_-_Nine.mp3",
+    //   author: "Marcel Pequel",
+    //   title: "Nine",
+    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
+    // },
   ];
 
   let currentId = 0;
@@ -433,6 +436,3 @@ burger.addEventListener("click", navToggle);
 setTimeout(function () {
   $(".loader_bg").fadeToggle();
 }, 3000);
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-};
