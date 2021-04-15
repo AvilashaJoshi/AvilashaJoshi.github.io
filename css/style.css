@@ -419,7 +419,8 @@ body.hide {
   font-family: "Mukta", sans-serif;
   width: 100%;
   height: 100%;
-  margin: auto;
+  /* margin: auto; */
+  margin-bottom: 2rem;
   padding: 0;
   min-width: 50vw;
   min-height: 50vh;
@@ -573,7 +574,6 @@ body.hide {
 .disclaimer a {
   color: #2196f3;
 }
-
 @media all and (max-width: 900px) {
   .c-containter {
     display: block;
@@ -604,7 +604,7 @@ body.hide {
     flex: 1 1 100%;
     width: 200px;
     height: 200px;
-    /* display: none; */
+    display: none;
   }
 
   .arrow {
@@ -628,5 +628,73 @@ body.hide {
 @media all and (max-height: 600px) {
   .album-cover {
     display: none;
+  }
+}
+
+/* Loader  */
+.loader_bg {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  /* display: block; */
+  width: 100px;
+  height: 100px;
+  /* position: relative; */
+  /* transform-origin: 63px 63px; */
+  animation: spin 1s infinite linear;
+}
+.loader .spinner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 0px 0px 26px 26px;
+  border-style: solid;
+  border-color: transparent;
+}
+.loader .spinner.yellow {
+  border-left-color: #ffff99;
+}
+.loader .spinner.orange {
+  border-left-color: #ffcc66;
+  transform: rotate(-45deg);
+}
+.loader .spinner.red {
+  border-left-color: #ff9966;
+  transform: rotate(-90deg);
+}
+.loader .spinner.pink {
+  border-left-color: #ff6699;
+  transform: rotate(-135deg);
+}
+.loader .spinner.violet {
+  border-left-color: #cc66cc;
+  transform: rotate(-180deg);
+}
+.loader .spinner.mauve {
+  border-left-color: #cc99cc;
+  transform: rotate(-225deg);
+}
+.loader .spinner.light-yellow {
+  border-left-color: #fffad5;
+  transform: rotate(-270deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }

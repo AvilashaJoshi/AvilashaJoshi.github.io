@@ -429,3 +429,7 @@ burger.addEventListener("click", navToggle);
 
   init();
 })();
+
+setTimeout(function () {
+  $(".loader_bg").fadeToggle();
+}, 3000);
