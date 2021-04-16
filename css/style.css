@@ -59,6 +59,9 @@ header {
   background-size: cover;
   margin-bottom: 2rem;
 }
+.mastheadContainer {
+  margin-top: 5%;
+}
 .masthead .masthead-heading {
   font-size: 2rem;
   line-height: 2.75rem;
