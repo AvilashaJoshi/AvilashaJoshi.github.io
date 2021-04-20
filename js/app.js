@@ -139,13 +139,13 @@ burger.addEventListener("click", navToggle);
       cover: "../img/poems_UntoldNarratives.png",
     },
 
-    // {
-    //   id: 3,
-    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_03_-_Three.mp3",
-    //   author: "Marcel Pequel",
-    //   title: "Three",
-    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    // },
+    {
+      id: 3,
+      url: "../music/adultAcne.mp3",
+      author: "Adult Acne",
+      title: "",
+      cover: "../img/adult.png",
+    },
 
     // {
     //   id: 4,
