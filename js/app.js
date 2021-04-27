@@ -147,53 +147,53 @@ burger.addEventListener("click", navToggle);
       cover: "../img/adult.png",
     },
 
-    // {
-    //   id: 4,
-    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_04_-_Four.mp3",
-    //   author: "Marcel Pequel",
-    //   title: "Four",
-    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    // },
+    {
+      id: 4,
+      url: "../music/skinCare.mp3",
+      author: "Skin Care",
+      title: "",
+      cover: "../img/poems_GenderNeutral.png",
+    },
 
-    // {
-    //   id: 5,
-    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_05_-_Five.mp3",
-    //   author: "Marcel Pequel",
-    //   title: "Five",
-    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    // },
+    {
+      id: 5,
+      url: "../music/socialMedia.mp3",
+      author: "Social Media Complaint",
+      title: "",
+      cover: "../img/social.jpg",
+    },
 
-    // {
-    //   id: 6,
-    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_06_-_Six.mp3",
-    //   author: "Marcel Pequel",
-    //   title: "Six",
-    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    // },
+    {
+      id: 6,
+      url: "../music/perfectComposition.mp3",
+      author: "A Perfect Composition",
+      title: "",
+      cover: "../img/perfectComposition.jpg",
+    },
 
-    // {
-    //   id: 7,
-    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_07_-_Seven.mp3",
-    //   author: "Marcel Pequel",
-    //   title: "Seven",
-    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    // },
+    {
+      id: 7,
+      url: "../music/instantMiracle.mp3",
+      author: "Instant Miracle",
+      title: "",
+      cover: "../img/instantMiracle.PNG",
+    },
 
-    // {
-    //   id: 8,
-    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_08_-_Eight.mp3",
-    //   author: "Marcel Pequel",
-    //   title: "Eight",
-    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    // },
+    {
+      id: 8,
+      url: "../music/socialDistancing.mp3",
+      author: "Social/Emotional Distancing",
+      title: "",
+      cover: "../img/acne.jpg",
+    },
 
-    // {
-    //   id: 9,
-    //   url: "http://cdn.atrera.com/audio/Marcel_Pequel_-_09_-_Nine.mp3",
-    //   author: "Marcel Pequel",
-    //   title: "Nine",
-    //   cover: "http://cdn.atrera.com/images/cover_yz2mak.jpg",
-    // },
+    {
+      id: 9,
+      url: "../music/maskNe.mp3",
+      author: "Mask-Ne",
+      title: "",
+      cover: "../img/poems_MaskNe.png",
+    },
   ];
 
   let currentId = 0;
