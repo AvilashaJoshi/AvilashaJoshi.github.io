@@ -184,7 +184,7 @@ burger.addEventListener("click", navToggle);
       url: "../music/socialDistancing.mp3",
       author: "Social/Emotional Distancing",
       title: "",
-      cover: "../img/acne.jpg",
+      cover: "../img/acne.JPG",
     },
 
     {
