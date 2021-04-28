@@ -707,3 +707,6 @@ body.hide {
     transform: rotate(-360deg);
   }
 }
+.nav-links {
+  margin-top: 5rem;
+}
